@@ -1,7 +1,52 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TV Calendar App</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="renderer.js"></script>
+  <!-- FullCalendar CSS -->
+  <link href="./node_modules/@fullcalendar/core/main.css" rel="stylesheet" />
+  <link href="./node_modules/@fullcalendar/daygrid/main.css" rel="stylesheet" />
+</head>
 <body>
-<h1>Concha peluda</h1>
-<p>I'm hosted with GitHub Pages.</p>
+  <div class="container">
+    <!-- Header -->
+    <header class="app-header">
+      <h1>TV Calendar App</h1>
+      <nav class="nav-tabs">
+        <button id="search-tab" class="tab-btn active">Buscar Series</button>
+        <button id="myshows-tab" class="tab-btn">Mis Series</button>
+        <button id="calendar-tab" class="tab-btn">Calendario</button>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Search Tab -->
+      <section id="search-section" class="tab-content active">
+        <div class="search-container">
+          <input type="text" id="search-input" placeholder="Buscar series...">
+          <button id="search-btn">Buscar</button>
+        </div>
+        <div id="search-results" class="results-grid"></div>
+      </section>
+
+      <!-- My Shows Tab -->
+      <section id="myshows-section" class="tab-content">
+        <h2>Mis Series</h2>
+        <div id="myshows-list" class="shows-grid"></div>
+      </section>
+
+      <!-- Calendar Tab -->
+      <section id="calendar-section" class="tab-content">
+        <h2>Calendario de Episodios</h2>
+        <div id="calendar-container">
+          <div id="calendar"></div>
+        </div>
+      </section>
+    </main>
+  </div>
 </body>
 </html>

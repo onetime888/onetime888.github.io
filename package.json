@@ -1,0 +1,30 @@
+{
+  "name": "tv-calendar-app",
+  "version": "1.0.0",
+  "description": "A desktop application for managing TV show calendars",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron . --dev"
+  },
+  "keywords": [
+    "electron",
+    "tv-shows",
+    "calendar",
+    "desktop"
+  ],
+  "author": "TV Calendar App",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^28.0.0"
+  },
+  "dependencies": {
+    "@fullcalendar/core": "^6.1.20",
+    "@fullcalendar/daygrid": "^6.1.20",
+    "@fullcalendar/interaction": "^6.1.20",
+    "moment": "^2.29.4",
+    "node-fetch": "^2.6.9",
+    "node-notifier": "^10.0.1",
+    "sqlite3": "^5.1.6"
+  }
+}
